@@ -27,7 +27,6 @@ def generate_response(message):
 
 
 def run_telebot():
-    # Don't forget to change your Telegram token in the .env
     application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     # Add a message handler
     message_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message)
