@@ -8,6 +8,8 @@ from llama_cpp import Llama
 TELEGRAM_TOKEN = 'Put-Telegram-Token-Here'
 
 
+# I'm using Llama-cpp-python to generate the response if you have other type of model for example GPTQ
+# Read their documentation, if you use Oobabooga's text generation web ui, change this to their API
 def generate_response(message):
     print('Generating response please wait...')
     # This is just a default prompt, you can replace this however you want
